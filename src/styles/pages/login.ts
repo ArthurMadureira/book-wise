@@ -3,7 +3,7 @@ import { styled } from '..'
 export const LoginContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  gap: '14.125rem',
+  gap: '24.125rem',
   // justifyContent: 'space-between',
   height: '90%'
 })
