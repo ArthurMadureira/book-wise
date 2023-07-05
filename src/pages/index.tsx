@@ -25,7 +25,7 @@ export default function Home() {
           </SideBarLink>
         </SideBarLinksContainer>
         <SignOutButton href='/login'>
-          <span>Log out</span>
+          <span>Log in</span>
           <SignIn size={32} color='#50B2C0' />
         </SignOutButton>
       </SideBarContainer>
