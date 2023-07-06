@@ -26,7 +26,7 @@ export function SideBar({ page }: SideBarProps) {
           Home
         </SideBarLink>
 
-        <SideBarLink href='/' style={{ color: page == 'explore' ? 'white' : '#8D95AF' }}>
+        <SideBarLink href='/explore' style={{ color: page == 'explore' ? 'white' : '#8D95AF' }}>
 
           <Binoculars size={24} />
           Explore

@@ -11,14 +11,14 @@ export const HomeContainer = styled('div', {
 
 // Home Main Content
 
-export const HomeMainContainer = styled('div', {
+export const HomeMainContainer = styled('main', {
   display: 'flex',
   alignItems: 'flex-start',
   gap: '4rem',
   width: '100%',
   height: '100%',
   marginTop: '184px',
-  justifyContent: 'center'
+  justifyContent: 'center',
 })
 
 export const HomeFeedContainer = styled('div', {

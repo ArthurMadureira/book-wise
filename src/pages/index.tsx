@@ -32,7 +32,7 @@ export default function Home() {
         <PopularBooksContainer>
           <PopularBooksHeader>
             <h4>Popular books</h4>
-            <Link href="">See all</Link>
+            <Link href="/explore">See all</Link>
           </PopularBooksHeader>
 
           <PopularBooksList>
