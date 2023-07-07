@@ -6,7 +6,7 @@ const nextConfig = {
     domains: [
       'www.github.com'
     ]
-  }
+  },
 }
 
 module.exports = nextConfig

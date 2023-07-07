@@ -57,13 +57,17 @@ export const ActionsContainer = styled('div', {
   width: '100%',
 })
 
-export const Action = styled('div', {
+export const Action = styled('button', {
   width: '100%',
   backgroundColor: '$gray600',
   paddingBlock: '1.25rem',
   paddingInline: '1rem',
   borderRadius: '8px',
   fontWeight: '$bold',
+
+  fontSize: '18px',
+  fontStyle: 'normal',
+  lineHeight: '160%',
 
   cursor: 'pointer',
   display: 'flex',
@@ -77,7 +81,8 @@ export const Action = styled('div', {
     textDecoration: 'none',
     display: 'flex',
     alignItems: 'center',
-    gap: '1.25rem'
+    gap: '1.25rem',
+    width: '100%'
   },
 
   '&:hover': {

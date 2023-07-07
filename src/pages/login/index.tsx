@@ -1,14 +1,21 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+
+import { useSession, signIn } from 'next-auth/react'
+
+import { Action, ActionsContainer, BookWiseContainer, LoginActionContainer, LoginContainer, LoginTextContainer } from "@/styles/pages/login"
 
 import WomenReadingABookImage from '/public/women-reading-book.png'
 import GithubLogo from '/public/github-logo.svg'
 import GoogleLogo from '/public/google-logo.svg'
 import RocketLaunch from '/public/rocket-launch.svg'
 
-import { Action, ActionsContainer, BookWiseContainer, LoginActionContainer, LoginContainer, LoginTextContainer } from "@/styles/pages/login";
-import Link from "next/link";
 
 export default function Login() {
+  const session = useSession()
+
+  console.log(session)
+
   return (
     <LoginContainer>
       <BookWiseContainer>
@@ -22,7 +29,7 @@ export default function Login() {
         </LoginTextContainer>
 
         <ActionsContainer>
-          <Action>
+          <Action onClick={() => signIn('google')}>
             <Image src={GoogleLogo} width={32} height={32} alt="Google logo" />
             Log in with Google
           </Action>
