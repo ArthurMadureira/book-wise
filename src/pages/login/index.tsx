@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 import { useSession, signIn } from 'next-auth/react'
 
@@ -13,6 +14,12 @@ import RocketLaunch from '/public/rocket-launch.svg'
 
 export default function Login() {
   const session = useSession()
+
+  const router = useRouter()
+
+  if (session.status === "authenticated") {
+    router.push('/')
+  }
 
   console.log(session)
 
