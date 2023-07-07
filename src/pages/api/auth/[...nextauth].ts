@@ -22,6 +22,7 @@ export const authOptions: AuthOptions = {
 
       return '/'
     }
-  }
+  },
+
 }
 export default NextAuth(authOptions)
